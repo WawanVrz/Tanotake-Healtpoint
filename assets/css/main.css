@@ -7268,6 +7268,16 @@ body {
       padding: 50px 0px; }
       .section-about .content-about .image-about-section .image-about-2 {
         height: 281px; }
+    .section-about .content-about .img-left {
+      position: absolute;
+      left: 0;
+      width: 300px;
+      margin-top: -300px; }
+    .section-about .content-about .img-right {
+      position: absolute;
+      right: 0;
+      width: 300px;
+      margin-top: -300px; }
 
 .section-gallery {
   background-image: url(../img/desktop-wave.png);
@@ -7351,6 +7361,10 @@ body {
   text-align: center;
   padding: 50px 25px 0px 25px;
   position: relative; }
+  .section-howto.desktop {
+    display: block; }
+  .section-howto.mobile {
+    display: none; }
   .section-howto .imgs {
     width: 70%; }
   .section-howto .content {
@@ -7475,5 +7489,168 @@ body {
     background: #496e69; }
   .section-footer .copyright {
     font-size: 13px; }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .section-header {
+    background-image: url(../img/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-header .image-header1 {
+      display: none; }
+    .section-header .logo {
+      width: 200px;
+      position: relative;
+      top: 125px; }
+    .section-header .title-header {
+      color: #BFA25A;
+      font-family: 'Tillana', cursive;
+      font-weight: 600;
+      position: relative;
+      top: 220px;
+      text-align: center;
+      padding: 0px 70px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 28px; }
+  .section-about .waves {
+    margin-top: -75px; }
+  .section-about .content-about {
+    margin-bottom: 50px; }
+    .section-about .content-about .title-about {
+      font-family: 'Salsa', cursive;
+      margin-bottom: 50px;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 34px; }
+    .section-about .content-about p {
+      font-size: 16px; }
+  .section-gallery {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-gallery .image-gallery-section {
+      width: 300px;
+      margin-top: -220px; }
+    .section-gallery .content-gallery {
+      text-align: left;
+      padding: 50px 20px;
+      background: #093630; }
+      .section-gallery .content-gallery p {
+        font-size: 16px; }
+      .section-gallery .content-gallery .content-quotes {
+        font-weight: 700;
+        font-size: 20px; }
+    .section-gallery .carousel-control-prev {
+      left: 0px; }
+    .section-gallery .carousel-control-next {
+      right: 0px; }
+    .section-gallery .carousel-indicators li {
+      background-color: #093630; }
+    .section-gallery .carousel-inner {
+      width: 100%; }
+  .section-quotes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    margin-top: 300px; }
+    .section-quotes h2 {
+      padding-left: 0px;
+      padding-right: 0px;
+      font-size: 25px;
+      line-height: 35px; }
+    .section-quotes .icon-quotes {
+      padding-left: 20px; }
+    .section-quotes .coloum-quotes {
+      padding: 15px 40px; }
+    .section-quotes p {
+      font-size: 16px; }
+  .section-howto {
+    margin-top: 800px;
+    padding: 50px 25px 100px 25px; }
+    .section-howto.mobile {
+      display: block; }
+    .section-howto.desktop {
+      display: none; }
+    .section-howto .lingkaran {
+      width: 100%;
+      margin-bottom: 50px; }
+    .section-howto .imgs {
+      width: 100%; }
+    .section-howto .content {
+      top: 68%;
+      width: 70%; }
+      .section-howto .content h2 {
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 29px;
+        padding-top: 30px;
+        padding-bottom: 25px; }
+      .section-howto .content .icon-quotes {
+        padding-left: 0px;
+        padding-top: 0px; }
+    .section-howto .rowcustom {
+      flex-wrap: inherit; }
+      .section-howto .rowcustom .img1 {
+        margin-left: -47px; }
+      .section-howto .rowcustom .img2 {
+        margin-left: 10px; }
+  .section-footer {
+    padding: 20px; }
+    .section-footer .address {
+      font-size: 16px; }
+    .section-footer .logo {
+      width: 225px; }
+    .section-footer .instagram {
+      margin-left: -170px;
+      font-size: 16px; }
+  .section-contact {
+    padding: 20px;
+    margin-bottom: 25px; }
+    .section-contact p {
+      text-align: justify;
+      font-size: 16px; }
+    .section-contact h2 {
+      font-family: 'Salsa', cursive;
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: center;
+      color: #073630;
+      letter-spacing: 1px;
+      line-height: 32px;
+      padding-top: 50px;
+      padding-bottom: 25px;
+      font-size: 24px; }
+    .section-contact .image-contact img {
+      width: 100%; }
+    .section-contact .icon-quotes {
+      position: absolute;
+      left: 0;
+      padding-left: 25px;
+      padding-top: 1030px; }
+    .section-contact .contact-wa {
+      color: #fff;
+      background: #2C9A6C;
+      padding: 10px 70px;
+      margin-top: 20px;
+      font-size: 18px; }
+    .section-contact .bg-contact {
+      width: 100%;
+      position: absolute;
+      padding-top: 925px;
+      z-index: -1; } }
 
 /*# sourceMappingURL=main.css.map */
