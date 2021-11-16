@@ -102,6 +102,7 @@ body {
           left: 0;
           width: 300px;
           margin-top: -300px;
+          z-index: -1;
         }
 
         .img-right{
@@ -225,7 +226,7 @@ body {
 .section-howto{
   background: #F2ECE1;
   text-align: center;
-  padding: 50px 25px 0px 25px;
+  padding: 50px 250px 50px 250px;
   position: relative;
 
     &.desktop{
@@ -236,23 +237,21 @@ body {
       display: none;
     }
 
+    .img-yinyang{
+      
+    }
+
     .imgs{
       width: 70%;
     }
 
-    .content{
-      position: absolute;
-      top: 55%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 0px;
-      width: 55%;
+    &.content{
 
         .icon-quotes{
           position: absolute;
-          left: 0;
+          left: 350px;
           padding-left: 100px;
-          padding-top: 465px;
+          padding-top: 450px;
         }
     
         h2{
@@ -273,17 +272,23 @@ body {
           line-height: 25px;
           text-align: left;
           margin-bottom: 5px;
+          padding: 0px 130px;
         }
 
         ul{
           text-align: left;
-          padding-left: 20px;
+          padding-left: 145px;
 
             li{
               font-family: 'Mulish', sans-serif;
               font-size: 14px;
               line-height: 25px;
             }
+        }
+
+        .center-img{
+          margin-top: 50px;
+          width: 80%;
         }
 
         .content-ims{
@@ -415,6 +420,128 @@ body {
 
 // ============================ RESPONSIVE MODE ==========================
 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+  .section-footer{
+    padding: 100px 50px 10px 50px;
+  }
+
+  .section-contact{
+    padding: 50px 50px 100px 50px;
+
+      .image-contact{
+          img{
+            width: 100%;
+          }
+      }
+
+      h2{
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .icon-quotes {
+        position: absolute;
+        left: 0;
+        padding-left: 100px;
+        padding-top: 1350px;
+      }
+
+      p{
+        font-size: 18px;
+      }
+
+      .contact-job{
+        margin-top: 10px;
+      }
+
+      .contact-name{
+        font-size: 30px;
+      }
+
+      .contact-wa{
+        font-size: 22px;
+        padding: 10px 100px;
+      }
+  }
+
+  .section-howto{
+    padding: 50px 0px 50px 0px;
+
+      &.content{
+         .icon-quotes{
+            position: absolute;
+            left: 35px;
+            padding-left: 100px;
+            padding-top: 450px;
+         }
+      }
+  }
+
+  .section-quotes{
+    padding: 50px 50px 50px 50px;
+    
+    .icon-quotes{
+      padding-left: 100px;
+    }
+  }
+
+  .section-gallery{
+    .image-gallery-section{
+      margin-top: -200px;
+    }
+
+    .content-gallery{
+      padding: 50px;
+
+      p{
+        font-size: 16px;
+      }
+      
+      .content-quotes{
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .section-about{
+    .waves{
+      display: none;
+    }
+    .content-about{
+      padding: 0px 50px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+
+      p{
+        font-size: 16px;
+      }
+    }
+  }
+
+  .section-header{
+    background-image: url(../img/iPadmini-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin-bottom: 50px;
+
+    .title-header{
+      padding: 0px 150px;
+      top: 250px;
+    }
+
+    .image-header1{
+      display: none;
+    }
+  }
+}
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
@@ -444,22 +571,27 @@ body {
           font-family: 'Tillana', cursive;
           font-weight: 600;
           position: relative;
-          top: 220px;
+          top: 190px;
           text-align: center;
           padding: 0px 70px;
           text-transform: uppercase;
           letter-spacing: 2px;
-          font-size: 28px;
+          font-size: 24px;
         }
     }
 
     .section-about{
         .waves {
-          margin-top: -75px;
+          margin-top: -65px;
+          display: block;
         }
 
         .content-about{
           margin-bottom: 50px;
+          text-align: left;
+          padding: 0px;
+          margin-top: 0px;
+          z-index: 999;
 
           .title-about {
             font-family: 'Salsa', cursive;
@@ -471,6 +603,7 @@ body {
 
           p{
             font-size: 16px;
+            padding: 0px 20px;
           }
         }
     }
@@ -485,7 +618,7 @@ body {
       align-items: center;
 
       .image-gallery-section {
-        width: 300px;
+        width: 250px;
         margin-top: -220px;
        }
 
@@ -528,8 +661,7 @@ body {
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        position: absolute;
-        margin-top: 300px;
+        margin-top: 100px;
 
         h2{
           padding-left: 0px;
@@ -543,7 +675,11 @@ body {
         }
 
         .coloum-quotes{
-          padding: 15px 40px;
+          padding: 15px 30px;
+
+          span{
+            font-size: 16px;
+          }
         }
 
         p{
@@ -552,8 +688,8 @@ body {
     }
 
     .section-howto{
-      margin-top: 800px;
-      padding: 50px 25px 100px 25px;
+      margin-top: 0px;
+      padding: 50px 25px 50px 25px;
 
         &.mobile{
           display: block;
@@ -561,6 +697,10 @@ body {
         
         &.desktop{
           display: none;
+        }
+
+        .img-yinyang{
+          width: 100%;
         }
 
         .lingkaran{
@@ -572,21 +712,41 @@ body {
           width: 100%;
         }
 
-        .content{
-          top: 68%;
-          width: 70%;
+        &.content{
 
             h2{
               padding-left: 0px;
               padding-right: 0px;
               font-size: 29px;
-              padding-top: 30px;
+              padding-top: 50px;
               padding-bottom: 25px;
             }
 
             .icon-quotes{
+              position: absolute;
+              left: 50px;
               padding-left: 0px;
-              padding-top: 0px;
+              padding-top: 380px;
+            }
+
+            p{
+              padding: 0 10px;
+            }
+
+            ul{
+              text-align: left;
+              padding-left: 40px;
+    
+                li{
+                  font-family: 'Mulish', sans-serif;
+                  font-size: 14px;
+                  line-height: 25px;
+                }
+            }
+
+            .center-img{
+              margin-top: 50px;
+              width: 100%;
             }
         }
 
@@ -615,7 +775,7 @@ body {
       }
 
       .instagram {
-        margin-left: -170px;
+        margin-left: -188px;
         font-size: 16px;
       }
     }
@@ -672,3 +832,4 @@ body {
       }
     }
 }
+
